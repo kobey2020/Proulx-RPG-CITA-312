@@ -7,7 +7,7 @@ using RPG.Core;
 namespace RPG.Combat
 
 {
-    public class Fighter : MonoBehaviour
+    public class Fighter : MonoBehaviour, IAction
     {
 
 
@@ -28,7 +28,7 @@ namespace RPG.Combat
             }
             else
             {
-                GetComponent<Mover>().Stop();
+                GetComponent<Mover>().Cancel();
             }
         }
 
@@ -43,7 +43,7 @@ namespace RPG.Combat
             target = combatTarget.transform;
         }
 
-        public void Cancle()
+        public void Cancel()
         {
             target = null;
         }
