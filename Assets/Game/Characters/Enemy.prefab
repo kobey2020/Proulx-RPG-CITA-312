@@ -106,10 +106,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8697800746598435783, guid: a77bc8ef5a93f544181a54f112608e78,
+        type: 3}
+      propertyPath: m_Speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5132348344061558770, guid: a77bc8ef5a93f544181a54f112608e78,
         type: 3}
       propertyPath: healthPoints
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368782673551204369, guid: a77bc8ef5a93f544181a54f112608e78,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77bc8ef5a93f544181a54f112608e78, type: 3}
