@@ -1578,9 +1578,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 2141770711}
-  m_PathPosition: 0
+  m_PathPosition: 1
   m_PositionUnits: 2
-  m_PathOffset: {x: 71.20689, y: 15.02262, z: 24.219963}
+  m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
   m_YDamping: 0
   m_ZDamping: 1
@@ -2606,6 +2606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 770379226}
   - component: {fileID: 770379227}
+  - component: {fileID: 770379228}
   m_Layer: 0
   m_Name: CM Dolly1
   m_TagString: Untagged
@@ -2620,7 +2621,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770379225}
-  m_LocalRotation: {x: 0.034751397, y: 0.9414178, z: -0.102418825, w: 0.3194294}
+  m_LocalRotation: {x: 0.041463885, y: 0.63951236, z: -0.03457721, w: 0.7668828}
   m_LocalPosition: {x: 32.05, y: 27.93, z: 22.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2665,6 +2666,25 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 408817009}
+--- !u!95 &770379228
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770379225}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &776011592
 GameObject:
   m_ObjectHideFlags: 0
@@ -3105,13 +3125,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909130198}
-  m_LocalRotation: {x: -0.028163096, y: 0.9716534, z: -0.15612207, w: -0.17527801}
+  m_LocalRotation: {x: -0.028163096, y: 0.9716534, z: -0.15612209, w: -0.175278}
   m_LocalPosition: {x: -24.396734, y: 29.886055, z: 1.6752043}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1723904227}
   m_Father: {fileID: 1343376749}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 10.459001, y: -150.201, z: -0.66400003}
 --- !u!1001 &963642081
 PrefabInstance:
@@ -3739,10 +3759,10 @@ Transform:
   m_LocalPosition: {x: -0.263266, y: -24.506054, z: 1.0947957}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1684870025}
   - {fileID: 1615757728}
   - {fileID: 1991476866}
   - {fileID: 909130200}
-  - {fileID: 1684870025}
   - {fileID: 770379226}
   - {fileID: 2141770710}
   m_Father: {fileID: 0}
@@ -4510,13 +4530,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615757726}
-  m_LocalRotation: {x: 0.006146141, y: 0.98826027, z: -0.1469543, w: 0.0413325}
+  m_LocalRotation: {x: 0.0061461465, y: 0.98826027, z: -0.14695431, w: 0.041332517}
   m_LocalPosition: {x: 12.183266, y: 27.886055, z: 15.875204}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1687657060}
   m_Father: {fileID: 1343376749}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 9.285001, y: -183.20299, z: 0}
 --- !u!1 &1657894547
 GameObject:
@@ -4641,7 +4661,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1343376749}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1684870026
 Animator:
@@ -4681,10 +4701,13 @@ PlayableDirector:
     value: {fileID: 1684870026}
   - key: {fileID: 193022714743380664, guid: 1e1a294fbe9de714bae0ef8583673b61, type: 2}
     value: {fileID: 776011594}
+  - key: {fileID: 6863837995241194913, guid: 1e1a294fbe9de714bae0ef8583673b61, type: 2}
+    value: {fileID: 770379228}
   m_ExposedReferences:
     m_References:
     - 6ccf7f515c1978a468c84daa4b368407: {fileID: 1991476865}
     - e8346e395ab15ad4eb029d8995aa5a7a: {fileID: 113737834}
+    - 64a0bd3b22875c2468faa95adfb823e0: {fileID: 770379227}
     - 9e7e7b21e3815bb4a8c4a9f9c22f8bd7: {fileID: 909130199}
     - 1e55e2c8a9ba8054180fe88ac2afafe9: {fileID: 1615757727}
 --- !u!1 &1687657059
@@ -5661,7 +5684,7 @@ Transform:
   m_Children:
   - {fileID: 1751955438}
   m_Father: {fileID: 1343376749}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 234.86899, z: 0}
 --- !u!1001 &1998981529
 PrefabInstance:
