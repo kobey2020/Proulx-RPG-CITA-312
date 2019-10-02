@@ -2315,6 +2315,11 @@ PrefabInstance:
       propertyPath: timeBetweenAttacks
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8697800746598435783, guid: a77bc8ef5a93f544181a54f112608e78,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77bc8ef5a93f544181a54f112608e78, type: 3}
 --- !u!4 &970478383548330127 stripped
