@@ -9,8 +9,6 @@ using UnityEngine.SceneManagement;
 
 namespace RPG.Saving
 {
-
-
     public class SavingSystem : MonoBehaviour
     {
         public IEnumerator LoadLastScene(string saveFile)
