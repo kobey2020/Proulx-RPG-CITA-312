@@ -11,10 +11,10 @@ namespace RPG.SceneManagement
     {
         enum DestinationIdentifier
         {
-            A, B, C, D, E, F, G, H
+            A, B, C, D, E
         }
 
-        [SerializeField] int sceneTotLoad = -1;
+        [SerializeField] int sceneToLoad = -1;
         [SerializeField] Transform spawnPoint;
         [SerializeField] DestinationIdentifier destination;
         [SerializeField] float fadeOutTime = 1f;
@@ -30,22 +30,22 @@ namespace RPG.SceneManagement
         }
         private IEnumerator Transition()
         {
-            if (sceneTotLoad < 0)
+            if (sceneToLoad < 0)
             {
                 Debug.LogError("Scene to load not set.");
                 yield break;
             }
 
-            Fader fader = FindObjectOfType<Fader>();
-
             DontDestroyOnLoad(gameObject);
+
+            Fader fader = FindObjectOfType<Fader>();
 
             yield return fader.FadeOut(fadeOutTime);
 
             SavingWrapper wrapper = FindObjectOfType<SavingWrapper>();
             wrapper.Save();
 
-            yield return SceneManager.LoadSceneAsync(sceneTotLoad);
+            yield return SceneManager.LoadSceneAsync(sceneToLoad);
 
             wrapper.Load();
 
@@ -73,8 +73,15 @@ namespace RPG.SceneManagement
         {
             foreach (Portal portal in FindObjectsOfType<Portal>())
             {
-                if (portal == this) continue;
-                if (portal.destination != destination) continue;
+                if (portal == this)
+                {
+                    continue;
+                }
+
+                if (portal.destination != destination)
+                {
+                    continue;
+                }
 
                 return portal;
             }
