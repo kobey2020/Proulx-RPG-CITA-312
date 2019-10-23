@@ -10,7 +10,6 @@ using UnityEngine.SceneManagement;
 namespace RPG.Saving
 {
 
-// hmmm yes this is a code...
 
     public class SavingSystem : MonoBehaviour
     {
