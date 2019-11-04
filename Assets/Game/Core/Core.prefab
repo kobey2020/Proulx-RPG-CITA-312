@@ -226,6 +226,12 @@ PrefabInstance:
       propertyPath: weaponDamage
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6132921972519622021, guid: fafd1c4f083c3a94c961aa1e98c7d2cf,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 17f837558f993f54c9821c8e9dd51fd6,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fafd1c4f083c3a94c961aa1e98c7d2cf, type: 3}
 --- !u!1 &800079692988947595 stripped
@@ -335,17 +341,17 @@ PrefabInstance:
     - target: {fileID: 3563291454619184129, guid: 18ea6c20d57d1964d98a08e547d0dd04,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.358389
+      value: -18.199999
       objectReference: {fileID: 0}
     - target: {fileID: 3563291454619184129, guid: 18ea6c20d57d1964d98a08e547d0dd04,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.02026
+      value: 41.043682
       objectReference: {fileID: 0}
     - target: {fileID: 3563291454619184129, guid: 18ea6c20d57d1964d98a08e547d0dd04,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -31.76798
+      value: -2.6000028
       objectReference: {fileID: 0}
     - target: {fileID: 3563291454619184129, guid: 18ea6c20d57d1964d98a08e547d0dd04,
         type: 3}
