@@ -41,4 +41,5 @@ public class Projectile : MonoBehaviour
         target.takeDamage(damage);
         Destroy(gameObject);
     }
+    //I dont intend to use homing or Fireball is this game or my fireball game
 }
